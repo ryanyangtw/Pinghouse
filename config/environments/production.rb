@@ -24,8 +24,8 @@ Rails.application.configure do
   
   #add for heroku-deflator
   config.serve_static_assets=true
-  config.assets.compress=true
-  config.assets.compile = true
+  #config.assets.compress=true
+  #config.assets.compile = true
   config.assets.digest=true
   config.static_cache_control="public, max-age=31536000"
 
