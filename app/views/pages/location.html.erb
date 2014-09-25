@@ -21,7 +21,9 @@
 </div>
 
 
-
-<script>
-	initialize();
-</script>
+<% content_for :google_map do%>
+    <%= javascript_include_tag 'google_map'%>
+  	<script>
+      initialize();
+    </script>
+<%end%>

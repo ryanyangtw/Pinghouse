@@ -15,9 +15,9 @@
 // require turbolinks
 // require jquery.turbolinks
 // require_tree .
-// require bootstrap/carousel
-// require bootstrap/alert
-//= require bootstrap-sprockets
-//= require google_map
+//= require bootstrap/carousel
+//= require bootstrap/alert
+// require bootstrap-sprockets
+// require google_map
 //= require jquery_customization
 //= require jquery_nested_form
