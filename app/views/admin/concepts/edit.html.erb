@@ -1,0 +1,40 @@
+
+  <h1>編輯概念頁</h1>
+  <hr>
+    <%= simple_nested_form_for @concept, html: {multipart: true}, :url=>admin_concept_path(@concept) do |f|%>
+
+
+      <%#binding.pry%>
+      <%= f.fields_for :photos, @concept.photos.order("id ASC") do |photo_form|%>
+
+
+        <div class="nested-fields form-inline form-img-box">
+          </br>
+          <%=photo_form.input :image, :input_html=>{:class=>"form-control"}, :wrapper_html=>{:class=>"form-group"}, :label=>"上傳圖片"%>
+
+
+
+          <%if !photo_form.object.image_url.nil?%>
+               <%= image_tag(photo_form.object.image_url, :class=>"img-rounded")%>
+          <%end%>
+
+
+          <%= photo_form.link_to_remove("Remove this photo", :class=>'btn btn-lg btn-danger') %>
+        </div>
+      <%end%>
+
+     
+      <%= f.link_to_add "Add a photo", :photos, :class=>'btn btn-lg btn-info' %>
+
+      <hr>
+
+
+    <div class="form-group">
+      <%= f.submit "Update", class: "btn btn-info btn-lg" %>
+    </div>
+
+    <%end%>
+
+
+
+

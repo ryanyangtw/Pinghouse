@@ -1,0 +1,204 @@
+
+<%= form_for(@page , :html => { :multipart => true }) do |f| %>
+	
+	<% if(@page.errors.any?) %>
+		<div id="error_explanation">
+			<h2><%= pluralized(@page.error.count , "error") %> prohibited this messge being saved:</h2>
+			<ul>
+				<%= @page.errors.full_message.each do |msg|%>
+					<li><%= msg%></li>
+				<% end %>
+			</ul>
+
+		</div>
+	<%end%>
+
+
+	<div class="alert text-center alert-success">
+  <h2><strong>首頁</strong></h2>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img1, 'home_slideshow_img1：')%>
+		<%=f.file_field(:home_slideshow_img1 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img2, 'home_slideshow_img2：')%>
+		<%=f.file_field(:home_slideshow_img2 , class: "form-control")%>
+	</div>
+
+		<div class="form-group">
+		<%=f.label(:home_slideshow_img3, 'home_slideshow_img3：')%>
+		<%=f.file_field(:home_slideshow_img3 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img4, 'home_slideshow_img4：')%>
+		<%=f.file_field(:home_slideshow_img4 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img5, 'home_slideshow_img5：')%>
+		<%=f.file_field(:home_slideshow_img5 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img6, 'home_slideshow_img6：')%>
+		<%=f.file_field(:home_slideshow_img6 , class: "form-control")%>
+	</div>
+
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img7, 'home_slideshow_img7：')%>
+		<%=f.file_field(:home_slideshow_img7 , class: "form-control")%>
+	</div>
+
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img8, 'home_slideshow_img8：')%>
+		<%=f.file_field(:home_slideshow_img8 , class: "form-control")%>
+	</div>
+
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img9, 'home_slideshow_img9：')%>
+		<%=f.file_field(:home_slideshow_img9 , class: "form-control")%>
+	</div>
+
+
+	<div class="form-group">
+		<%=f.label(:home_slideshow_img10, 'home_slideshow_img10：')%>
+		<%=f.file_field(:home_slideshow_img10 , class: "form-control")%>
+	</div>
+
+
+	
+
+
+
+	<div class="alert text-center alert-success">
+  <h2><strong>概念</strong></h2>
+	</div>
+
+
+	<div class="form-group">
+		<%=f.label(:concept_img1, 'concept_img1：')%>
+		<%=f.file_field(:concept_img1 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:concept_img2, 'concept_img2：')%>
+		<%=f.file_field(:concept_img2 , class: "form-control")%>
+	</div>
+
+		<div class="form-group">
+		<%=f.label(:concept_img3, 'concept_img3：')%>
+		<%=f.file_field(:concept_img3 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:concept_img4, 'concept_img4：')%>
+		<%=f.file_field(:concept_img4 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:concept_img5, 'concept_img5：')%>
+		<%=f.file_field(:concept_img5 , class: "form-control")%>
+	</div>
+
+
+	
+	<div class="alert text-center alert-success">
+  <h2><strong>餐飲</strong></h2>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:food_img1, 'food_img1：')%>
+		<%=f.file_field(:food_img1 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:food_img2, 'food_img2：')%>
+		<%=f.file_field(:food_img4 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:food_img3, 'food_img3：')%>
+		<%=f.file_field(:food_img5 , class: "form-control")%>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="alert text-center alert-success">
+  <h2><strong>場租</strong></h2>
+	</div>
+
+
+	<div class="form-group">
+		<%=f.label(:rent_slideshow_img1, 'rent_slideshow_img1：')%>
+		<%=f.file_field(:rent_slideshow_img1 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:rent_slideshow_img2, 'rent_slideshow_img2：')%>
+		<%=f.file_field(:rent_slideshow_img2 , class: "form-control")%>
+	</div>
+
+		<div class="form-group">
+		<%=f.label(:rent_slideshow_img3, 'rent_slideshow_img3：')%>
+		<%=f.file_field(:rent_slideshow_img3 , class: "form-control")%>
+	</div>
+
+	
+
+
+	<div class="alert text-center alert-success">
+  <h2><strong>活動</strong></h2>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:activity_img1, 'activity_img1：')%>
+		<%=f.file_field(:activity_img1 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:activity_img2, 'activity_img2：')%>
+		<%=f.file_field(:activity_img2 , class: "form-control")%>
+	</div>
+
+		<div class="form-group">
+		<%=f.label(:activity_img3, 'activity_img3：')%>
+		<%=f.file_field(:activity_img3 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:activity_img4, 'activity_img4：')%>
+		<%=f.file_field(:activity_img4 , class: "form-control")%>
+	</div>
+
+	<div class="form-group">
+		<%=f.label(:activity_img5, 'activity_img5：')%>
+		<%=f.file_field(:activity_img5 , class: "form-control")%>
+	</div>
+
+
+
+
+
+
+
+	<div class="form-group">
+    <%= f.submit(class: "btn btn-primary") %>
+  </div>
+
+
+
+<%end%>
+
+

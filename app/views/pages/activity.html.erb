@@ -1,0 +1,11 @@
+<div class="row">
+
+
+  <% @activity.photos.order("id ASC").each do |photo|%>
+    <div class="col-md-12 div-gallery">
+      <%=image_tag(photo.image.url, class: "img-fullwidth img-rounded")  %>
+    </div>
+  <% end %>
+
+
+</div>

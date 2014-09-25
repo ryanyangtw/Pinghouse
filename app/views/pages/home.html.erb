@@ -1,0 +1,55 @@
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <%@home.photos.size.times do |i| %>
+      <%if i == 0%>
+        <li data-target="#myCarousel" data-slide-to="<%= i %>" class="active"></li>
+      <%else%>
+        <li data-target="#myCarousel" data-slide-to="<%= i %>" ></li>
+      <%end%>
+    <%end%>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+
+    <% @home.photos.order("id ASC").each_with_index do |photo, i|%>
+        <%if i==0 %>
+          <div class="active item">
+            <%=image_tag(photo.image_url , class: 'img-slideshow img-rounded') %>
+          </div>
+        <%else%>
+          <div class="item">
+            <%=image_tag(photo.image_url, class: 'img-slideshow img-rounded') %>
+          </div>
+        <%end%>
+    <%end%>
+  </div>
+
+
+  <!-- Carousel nav -->
+  <a id="carousel-control-left" class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a id="carousel-control-right" class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+
+
+
+<div class="row img-link">
+  <div class="col-md-3 div-link-logo">
+    <%=image_tag('facebook.jpg', class: "link-logo") %>
+  </div>
+
+  <div class="col-md-3 div-link-logo">
+    <%=image_tag('sky.jpg', class: " link-logo") %>
+  </div>
+
+  <div class="col-md-3 div-link-logo">
+    <%=image_tag('yahoo.jpg', class: " link-logo") %>
+  </div>
+
+  <div class="col-md-3 div-link-logo">
+    <%=image_tag('google360.jpg', class: " link-logo") %>
+  </div>
+</div>

@@ -1,0 +1,294 @@
+<div class="row">
+
+
+	<div class="col-md-12 div-gallery">
+		
+
+
+			<div id="myCarousel" class="carousel slide">
+
+				<ol class="carousel-indicators">
+			    <%@rent.photos.size.times do |i| %>
+			      <%if i == 0%>
+			        <li data-target="#myCarousel" data-slide-to="<%= i %>" class="active"></li>
+			      <%else%>
+			        <li data-target="#myCarousel" data-slide-to="<%= i %>" ></li>
+			      <%end%>
+			    <%end%>
+			  </ol>
+
+			  <!-- Carousel items -->
+			  <div class="carousel-inner">
+			    <% @rent.photos.order("id ASC").each_with_index do |photo, i|%>
+		        <%if i==0 %>
+		          <div class="active item">
+		            <%=image_tag(photo.image_url , class: 'img-slideshow img-rounded') %>
+		          </div>
+		        <%else%>
+		          <div class="item">
+		            <%=image_tag(photo.image_url, class: 'img-slideshow img-rounded') %>
+		          </div>
+		        <%end%>
+		    	<%end%>
+			    
+
+
+
+			  </div>
+			  <!-- Carousel nav -->
+			  <a id="carousel-control-left" class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			  <a id="carousel-control-right" class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+			
+
+
+
+
+	</div>
+
+
+
+
+	<div class="col-md-12">
+		<h4>
+			
+			<%= simple_format("包場（Zone12）
+
+			容納人數：10~12
+
+			適合：影音分享、課程、小型會議、聚會
+
+			場租費用：650/小時
+
+			設備提供：無線上網")%>
+
+			
+		</h4>
+		<br>
+		
+		<h4>
+
+
+				<%= simple_format("
+				包場（Zone20）
+
+				容納人數：15~20
+
+				適合：影音分享、講座課程、中型會議、聚會
+
+				場租費用：1200/小時
+
+				設備提供：無線上網")%>
+		</h4>
+		<br>
+
+
+		<h4>
+
+
+				<%= simple_format("
+				包場（Zone30）
+
+				容納人數：25~30
+
+				適合：影音分享、講座課程、中型會議
+
+				場租費用：1500/小時
+
+				設備提供：40吋液晶電視（免費使用）
+
+				 無線上網")%>
+		</h4>
+		<br>
+
+
+
+		<h5>
+
+
+				椅場地皆可依照需求安排調整。訂位專線：(02)7713-6870（小字)
+		</h5>
+		<br>
+		<br>
+
+
+		
+		<h2 class="green-color">
+
+
+				<%= simple_format("包場特惠方案")%>
+		</h2>
+
+
+		<h4>
+
+
+				<%= simple_format("週一至週五 早上10點 到晚上6點，平日場租滿2個小時，即贈送免費場租一個小時。
+
+					注意事項：
+
+					1. 使用此優惠方案，請於活動 一週前預付一小時包場訂金。
+
+					2. 贈送免費場租時間請於當天使用完畢。")%>
+		</h4>
+		<br>
+
+
+
+		<h2 class="green-color">
+
+
+				<%= simple_format("包場規定")%>
+		</h2>
+
+
+		<h4>
+
+
+				<%= simple_format("1. 平日預約包場，請於一週前確認；週末預約包場，請於二週前確認。（如有
+
+					緊急臨時性預約包場，請直接電話 (02)7713-6870洽詢）
+
+					2. 包場餐飲的選擇有三種：
+
+					1. 自帶餐飲（不酌收場地清潔費）
+
+					2. Buffet（Buffet餐飲內容請在活動 5天前 決定，並預付 50% 餐飲費用。）
+
+					3. 單點餐飲（單點餐飲部分可享9折優惠）
+
+					＊. 以上三種選擇均提供 熱紅茶/冰紅茶（擇一） 無限暢飲
+
+					3. 預約包場時間後，請於三天內（含第三天）支付一小時包場訂金，才能確定
+
+					將您的場地時間保留下來；未在期限內支付訂金，將取消預約包場時間。
+
+					4. 提供包場活動設備租用（例：投影機、投影幕、麥克風），請於場地租借申
+
+					請表上勾選。設備數量有限，以預約時間安排優先順序；租金請和場地訂金一
+
+					併支付，未在期限內支付者，將取消設備租用權利。
+
+					5. 各公司行號、團體，如有長期預約包場 或是 固定時段舉辦活動等需求，我們
+
+					可依照您的需求，提供各項優惠方案。
+
+					6. 聯絡場地租借事宜，請電話聯絡 (02)7713-6870 或 Email至")%>
+		</h4>
+		<br>
+
+
+
+
+		<h2 class="green-color">
+
+
+				<%= simple_format("包場注意事項")%>
+		</h2>
+
+
+		<h4>
+
+
+				<%= simple_format("1. 包場時間可提前或延後 30分鐘 做場地佈置或撤場清潔，如果您的場佈時間會
+
+					超過30分鐘，請您將場佈時間算進你場租時間內。超過的時間將以30分鐘為單
+
+					位計算收費。
+
+					2. 如欲取消包場活動，請在活動前三天前以電話 或 Email通知，逾期恕無法退
+
+					回場地訂金；已準備的餐飲費用恕不退還。
+
+					3. 場地佈置請勿使用各式膠帶黏貼及加釘任何鐵釘於牆面，牆面如有損壞，將
+
+					酌收整修費用 NT$2,000。活動結束需將場地回復原狀歸還。
+
+					4. 如有張貼海報、宣傳單之需求，經店家同意後於指定位置張貼。
+
+					5. 租用活動設備請妥善愛護運用，若因不當使用或人為疏失造成設備損壞，需
+
+					照價賠償。
+
+					6. 活動進行請保持秩序，全場禁止吸煙、大聲喧嘩、衝撞跑跳，活動內容不得
+
+					違反政府法令、背離善良風俗、違反公共安全，若有違規事項，店家有權終止
+
+					活動之進行，已繳費用恕不退還。")%>
+		</h4>
+		
+
+		<blockquote>
+				<footer>以上事項怡木庫房保有修改之權利。</footer>
+		</blockquote>
+
+	
+
+		<h2 class="green-color">
+
+
+				<%= simple_format("包場餐飲")%>
+		</h2>
+
+
+		<h4>
+
+
+				<%= simple_format("依照您人數……等需求
+
+				搭配適合份量的餐飲並回覆mail您一份報價單。
+
+				＊. 冷、熱壺裝飲料（咖啡 / 奶茶 / 柳橙汁 / 桂花蜜 / 可樂）
+
+				＊. 水果拼盤（時令水果 2種 / 3種 / 4種 / 5種）
+
+				＊. 墨西哥脆餅佐莎莎醬
+
+				＊. 培根捲（鮮蔬 / 蕃茄）
+
+				＊. 三明治（起司火腿 / 花生醬鮪魚 / 水果果醬）
+
+				＊. 湯品（蘑菇 / 肉骨茶）
+
+				＊. 甜點（手工餅乾 / 起司餅 / 布朗尼 / 奶酪 / 店家推薦蛋糕)")%>
+		</h4>
+		<br>
+
+
+		<div class="col-md-12 div-gallery">
+			<div class="col-md-4">
+				<%=image_tag('space_img1.jpg' , class: "img-fullwidth img-rounded")  %>
+			</div>
+
+			<div class="col-md-4">
+				<%=image_tag('space_img1.jpg' , class: "img-fullwidth img-rounded")  %>
+
+			</div>
+
+			<div class="col-md-4">
+				<%=image_tag('space_img1.jpg' , class: "img-fullwidth img-rounded")  %>
+			</div>
+		</div>
+		<div class="col-md-12 div-gallery">
+
+			<div class="col-md-4">
+				<%=image_tag('space_img1.jpg' , class: "img-fullwidth img-rounded")  %>
+			</div>
+
+			<div class="col-md-4">
+				<%=image_tag('space_img1.jpg' , class: "img-fullwidth img-rounded")  %>
+			</div>
+
+			<div class="col-md-4">
+				<%=image_tag('space_img1.jpg' , class: "img-fullwidth img-rounded")  %>
+			</div>
+
+		</div>
+
+
+
+
+</div>
+
+
+</div>

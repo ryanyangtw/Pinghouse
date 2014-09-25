@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PingHouse</title>
+  <!--<title>怡木庫房</title>-->
+
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="<%= image_path("logo.jpg")%>">
+
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoHXpUiEiwf7-GZkXAGr5glqi1p7H0C3M&sensor=false">
+  </script>
+
+
+  <meta name="Description" content="怡木庫房是由室內設計師的原木家具及鐵藝飾品商店，提供超高cp質具獨特品味的復古仿舊設計木質家具及雜貨zakka
+適合自然、鄉村及LOFT設計風格的居家擺設，亦提供試內設計及擺設規劃之相關服務。。" />
+    <meta name="Abstract" content="怡木庫房是由室內設計師的原木家具及鐵藝飾品商店，提供超高cp質具獨特品味的復古仿舊設計木質家具及雜貨zakka
+適合自然、鄉村及LOFT設計風格的居家擺設，亦提供試內設計及擺設規劃之相關服務。" />
+    <meta name="Keywords" content="怡木庫房是由室內設計師的原木家具及鐵藝飾品商店，提供超高cp質具獨特品味的復古仿舊設計木質家具及雜貨zakka
+適合自然、鄉村及LOFT設計風格的居家擺設，亦提供試內設計及擺設規劃之相關服務。" />
+
+  <meta name="Author" content="Ryan Yang" />
+
+  
+
+</head>
+
+
+
+
+<body>
+
+  <div class="container">
+    <%= render "common/navbar" %>
+
+    <%= notice_message %>
+    
+    <div class="row">
+      <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+          <li> <%= link_to("首頁", edit_admin_home_path(Home.first)) if Home.first.present? %> </li>
+          <li> <%= link_to("概念", edit_admin_concept_path(Concept.first)) if Concept.first.present?%> </li>
+          <li> <%= link_to("餐飲", edit_admin_food_path(Food.first)) if Food.first.present?%> </li>
+          <li> <%= link_to("空間", edit_admin_space_path(Space.first)) if Space.first.present? %> </li>
+          <li> <%= link_to("場租", edit_admin_rent_path(Rent.first)) if Rent.first.present? %> </li>
+          <li> <%= link_to("活動", edit_admin_activity_path(Activity.first)) if Activity.first.present?%> </li>
+          <li class="li-sign_out"><%= link_to("登出", admin_path, :method=>:delete) if current_administrator%></li>
+
+        </ul>
+
+
+      </div>
+      <div class="col-md-offset-1 col-md-9 well">
+
+        <%= yield %>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>

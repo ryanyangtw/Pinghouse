@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ * require_tree .
+ *= require_self
+
+ *= require bootstrap_and_customization
+ *= require flat-ui
+ *= require font-awesome
+ *= require pages
+
+
+ */
+
+
+.nav-pills > li > a{
+  background-color: #ecf0f1
+}
+
+li.li-sign_out > a{
+    background-color: #f1c40f;
+}
+
+
+div.form-img-box img {
+height: 200px;
+width: 40%;
+}
+
+
+
+a.btn.add_nested_fields {
+margin-top: 30px;
+}
+
+
+
+
+div.div-gallery > img{
+  height: 394px;
+}
+
+
+
+div.div-gallery > img.img-location{
+
+    height:500px;
+}
+
+
+
+
+
+
+

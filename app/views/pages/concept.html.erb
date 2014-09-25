@@ -1,0 +1,25 @@
+<div class="row">
+	<div class="col-md-12">
+		<h2 class="green-color">飄逸著木香的的傢飾餐飲複合空間<h2>
+		<h4>"家，是能夠快樂的和所愛的人們生活的地方</h4>
+		<h4>
+老東西、廢木料、舊傢俱、陳舊的生活用品讓時間有了價值
+</h4>
+	<br>
+
+<h4>
+Life is art 怡木庫房不僅是獨特風格木製傢俱傢飾的店家，更希望能創造商品MIT的可能；運用在地的素材、在地的人力與技術，創造具在地風格文化內涵的生活品項。
+</h4>
+<br>
+<h4>
+
+透過 提供餐飲 與 活動場地 的方式讓每個人都有機會來到這個空間，認識這些隨時間更有價值的傢俱，感受生活中美好的自己。</h4>
+	</div>
+
+	<% @concept.photos.order("id ASC").each do |photo|%>
+		<div class="col-md-12 div-gallery">
+			<%=image_tag(photo.image.url, class: "img-fullwidth img-rounded")  %>
+		</div>
+	<% end %>
+
+</div>

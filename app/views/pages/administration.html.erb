@@ -1,0 +1,13 @@
+<h2>Administration</h2>
+
+<%= link_to('sign in ', new_user_session_path , class: 'btn btn-primary')%>
+
+<%= link_to "Log Out" , destroy_user_session_path , method: :delete , class: 'btn btn-primary'%>
+
+
+
+<br>
+<br>
+
+
+<%= link_to('編輯頁面（必須要先sign in才可進入）' , 'http://ping-house.herokuapp.com/pages/1/edit' ,  class: 'btn btn-default')%>

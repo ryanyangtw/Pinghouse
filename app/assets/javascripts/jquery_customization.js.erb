@@ -1,0 +1,48 @@
+
+
+$(document).ready(function(){
+
+
+  $('#carousel-control-left').hide();
+  $('#carousel-control-right').hide();
+
+  
+
+  $('.carousel').carousel({
+    interval: 5000
+  })
+
+
+
+  $('#myCarousel').mouseenter(function(){
+
+    $('#carousel-control-left').show();
+    $('#carousel-control-right').show();
+
+  });
+
+  $('#myCarousel').mouseleave(function(){
+
+   $('#carousel-control-left').hide();
+   $('#carousel-control-right').hide();
+
+  });
+
+  
+  $('#logo-img').click(function(){
+    window.location.href = "/";
+  });
+
+  //window.onload = loadScript;
+  //initialize();
+
+});
+
+$(window).load(function(){
+
+  $('#map-canvas').load(function(){
+    //initialize();
+  });
+  
+
+});
