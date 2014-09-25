@@ -22,7 +22,12 @@
 
 
 <% content_for :google_map do%>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoHXpUiEiwf7-GZkXAGr5glqi1p7H0C3M&sensor=false">
+    </script>
+
     <%= javascript_include_tag 'google_map'%>
+    
   	<script>
       initialize();
     </script>
