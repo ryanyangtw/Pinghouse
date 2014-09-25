@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PingHouse</title>
+  <!--<title>PingHouse</title>-->
   <!--<title>怡木庫房</title>-->
 
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => false %>
 
   <%= csrf_meta_tags %>
+
+  <%=render_page_title_meta_tag%><%# This might be unnecessary %>
+  <%=render_page_description_meta_tag%>
+  <%=render_page_keywords_meta_tag%>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,14 +20,14 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoHXpUiEiwf7-GZkXAGr5glqi1p7H0C3M&sensor=false">
   </script>
 
-
+<!--
   <meta name="Description" content="怡木庫房是由室內設計師的原木家具及鐵藝飾品商店，提供超高cp質具獨特品味的復古仿舊設計木質家具及雜貨zakka
 適合自然、鄉村及LOFT設計風格的居家擺設，亦提供試內設計及擺設規劃之相關服務。。" />
     <meta name="Abstract" content="怡木庫房是由室內設計師的原木家具及鐵藝飾品商店，提供超高cp質具獨特品味的復古仿舊設計木質家具及雜貨zakka
 適合自然、鄉村及LOFT設計風格的居家擺設，亦提供試內設計及擺設規劃之相關服務。" />
     <meta name="Keywords" content="怡木庫房是由室內設計師的原木家具及鐵藝飾品商店，提供超高cp質具獨特品味的復古仿舊設計木質家具及雜貨zakka
 適合自然、鄉村及LOFT設計風格的居家擺設，亦提供試內設計及擺設規劃之相關服務。" />
-
+-->
 	<meta name="Author" content="Ryan Yang" />
 
   
