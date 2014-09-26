@@ -58,7 +58,19 @@ div.div-gallery > img.img-location{
 
 
 
+img#logo-img{
+  width:299px;
+}
 
+@media screen and (max-width: 1200px) {
+    img#logo-img{
+      width:200px;
+    }
+   
+   div.collapse > ul.nav.navbar-nav.navbar-right:last-child {
+      margin-top: 10px;
+    }
+}
 
 
 
