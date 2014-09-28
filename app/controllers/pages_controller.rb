@@ -51,7 +51,7 @@ class PagesController < ApplicationController
 
   def location
     set_page_title("怡木庫房-位置")
-    set_page_description("怡木庫房-位置 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房- 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
   end
 
 
