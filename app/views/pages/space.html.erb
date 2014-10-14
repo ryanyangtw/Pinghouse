@@ -1,6 +1,15 @@
 <div class="row">
 
 
+  <div class="col-md-12">
+    <iframe width=100% height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.tw/maps?q=%E6%80%A1%E6%9C%A8%E5%BA%AB%E6%88%BFPing+House&amp;layer=c&amp;sll=25.021007,121.526983&amp;cid=17512875355829722430&amp;panoid=uAp9WhMJEwYAAAQfCWe5tA&amp;cbp=13,35.42,,0,0&amp;brcurrent=3,0x3442a99bd1adbcc7:0xc5ab69bb7491162a,0,0x3442ac6b61dbbd9d:0xc0c243da98cba64b&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=25.021007,121.526983&amp;spn=0.006295,0.006295&amp;t=m&amp;cbll=25.021001,121.526939&amp;source=embed&amp;output=svembed"></iframe>
+    <br/><br/><br/>
+  </div>
+
+
+
+
+
   <% @space.photos.order("id ASC").each do |photo|%>
     <div class="col-md-12 div-gallery">
       <%=image_tag(photo.image.url, class: "img-fullwidth img-rounded")  %>

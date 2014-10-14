@@ -75,7 +75,16 @@ img#logo-img{
 
 div.description h4{
   line-height: 30px;
+  font-size: 20px ;
+}
+
+.title{
   font-size: 22px ;
+}
+
+h4.description{
+
+    font-size: 20px ;
 }
 
 

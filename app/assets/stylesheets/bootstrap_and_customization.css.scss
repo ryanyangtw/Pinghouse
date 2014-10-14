@@ -1,25 +1,7 @@
 
-$font-family-sans-serif:  'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$alert-success-bg: #D6E1E9;
-$alert-success-text: #34495e;
-
-$nav-tabs-link-hover-border-color: #34495e; 
-$nav-tabs-active-link-hover-bg: #34495e;
-$nav-tabs-active-link-hover-color: #ecf0f1; 
-
-$btn-info-bg: #34495e;
-
-$jumbotron-bg: #bdc3c7;
 
 
-//$navbar-inverse-bg: #EFF3DA;
-//$navbar-inverse-bg: #ecf0f1;
-$navbar-default-bg: #ecf0f1;
-$navbar-default-border: #ecf0f1, 0%;
-
-
-$navbar-inverse-link-hover-color: #34495e; 
-$btn-default-color: #2c3e50;
+$font-family-base: wt064;
 
 
 @import 'bootstrap-sprockets';
@@ -126,6 +108,20 @@ div.collapse > ul.navbar-nav.navbar-right:last-child {
 
 
 
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(even) > th {
+background-color: #e3e3e3;
+}
+
+
+
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > td {
+border: 2px solid #99BE80;
+}
+
+.table-bordered {
+border: 2px solid #99BE80;
+}
 
 
 
