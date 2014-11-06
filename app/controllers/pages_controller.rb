@@ -16,42 +16,42 @@ class PagesController < ApplicationController
 
   def concept
     set_page_title("怡木庫房-概念")
-    set_page_description("怡木庫房-概念 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房-概念。怡木~設計師打造的各式原木餐飲空間。")
     @concept = Concept.first
   end
 
   def food
     set_page_title("怡木庫房-餐飲")
-    set_page_description("怡木庫房-餐飲 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房-餐飲。怡木~設計師打造的各式原木餐飲空間。")
     @food = Food.first
   end
 
   def space
     set_page_title("怡木庫房-空間")
-    set_page_description("怡木庫房-空間 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房-空間。怡木~設計師打造的各式原木餐飲空間。")
     @space = Space.first
   end
 
   def rent  
     set_page_title("怡木庫房-場租")
-    set_page_description("怡木庫房-場租 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房-場租。怡木~設計師打造的各式原木餐飲空間。")
     @rent = Rent.first
   end
 
   def calendar
     set_page_title("怡木庫房-行事曆")
-    set_page_description("怡木庫房-行事曆 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房-行事曆。怡木~設計師打造的各式原木餐飲空間。")
   end
 
   def activity
     set_page_title("怡木庫房-活動")
-    set_page_description("怡木庫房-活動 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房-活動。怡木~設計師打造的各式原木餐飲空間。")
     @activity = Activity.first
   end
 
   def location
     set_page_title("怡木庫房-位置")
-    set_page_description("怡木庫房- 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_description("怡木庫房-地點。 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
   end
 
 
