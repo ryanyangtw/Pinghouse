@@ -8,8 +8,8 @@ class PagesController < ApplicationController
 
 
   def home  
-    set_page_title("怡木庫房")
-    set_page_description("怡木庫房 怡木庫房提供您空間、餐飲、傢俱傢飾的服務。")
+    set_page_title("怡木庫房-首頁")
+    set_page_description("怡木~設計師打造的各式原木餐飲空間。")
 
     @home = Home.first  
   end
